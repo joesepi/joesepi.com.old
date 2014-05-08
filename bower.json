@@ -1,0 +1,20 @@
+{
+  "name": "joesepi.com-isotope",
+  "version": "0.0.0",
+  "authors": [
+    "Joe Sepi <sepi@joesepi.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "isotope": "~2.0.0",
+    "jquery": "~2.1.1"
+  }
+}
