@@ -1,0 +1,76 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+
+    <title>Joe Sepi Land</title>
+    <meta name="description" content="Joe Sepi Land">
+    <meta name="author" content="Joe Sepi">
+
+    <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="/vendor/font-awesome.css" />
+    <link rel="stylesheet" href="/vendor/jumbotron.css"/>
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="/vendor/angular.min.js"></script>
+    <script src="/vendor/angular-route.js"></script>
+    <script src="/vendor/angular-animate.js"></script>
+    <!-- <script src="/vendor/bootstrap.min.js"></script> -->
+    <script src="app.js"></script>
+
+<!--     <style>
+        .ng-enter {
+          animation: fadeIn 2s;
+        }
+
+        .ng-leave {
+          animation: fadeOut 2s;
+        }
+    </style> -->
+
+</head>
+
+    <!-- define angular controller -->
+<body ng-controller="mainController">
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Joe Sepi</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><!-- <i class="fa fa-home"></i>  -->Home</a></li>
+                <li><a href="#about"><!-- <i class="fa fa-shield"></i>  -->About</a></li>
+                <li><a href="#code"><!-- <i class="fa fa-comment"></i>  -->Code</a></li>
+                <li><a href="#music"><!-- <i class="fa fa-comment"></i>  -->Music</a></li>
+                <li><a href="#contact"><!-- <i class="fa fa-comment"></i>  -->Contact</a></li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main" class="container">
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+<hr>
+  <footer>
+    Twitter widget
+    Social/Etc icons
+  </footer>
+    </div>
+
+
+</body>
+</html>
